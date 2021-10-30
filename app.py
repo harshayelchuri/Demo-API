@@ -28,7 +28,7 @@ def add_object():
   object = mongo.db.objects
   lattitude = request.json['lattitude']
   longitude = request.json['longitude']
-  url = 'http://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid=93b8bf383639dcac89853445da549e49&units=metric'.format(lattitude, longitude)
+  url = 'http://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid=****************************&units=metric'.format(lattitude, longitude)
   res = requests.get(url)
   data = res.json()
   temperature = data['main']['temp']
